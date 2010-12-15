@@ -1,1 +1,14 @@
 Hi. Welcome to Complykit. I'm just getting started, and trying to get settled into github at the same time.
+
+For now, I'm just plugging in some tips and tricks you might want to know about.
+
+If you are setting up this project with Eclipse, this is the content of the .gitignore file I use in the top of the tree (you regular expression people will probably see improvements you could make--please do so!):
+
+.metadata/
+*.classpath
+*.project
+*.settings/
+ck-common/bin/
+ck-core/bin/
+.gitignore
+
