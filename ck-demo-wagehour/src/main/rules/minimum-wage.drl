@@ -1,0 +1,48 @@
+#created on: Dec 16, 2010
+package com.complykit.demos.wagehour
+
+#list any import classes here.
+
+#declare any global variables here
+
+# Source of law: 29 USC 206, 29 CFR 516.2(a)(1)-(12)
+# These regulations, promulgated by the U.S. Department of Labor ("DOL")
+# impose certain minimum recordkeeping requirements upon all covered 
+# employers. Section 516.2(a) says every employer "shall maintain and 
+# preserve payroll or other records containing" the information in sub-
+# paragraphs (1) through (12). The DOL enacted these under section 6 of
+# the FLSA.
+rule "Verify basic record keeping"
+	when
+		#employee
+		#no gross wages
+		#or no hours
+		#but not on vacation, leave, sick, or something
+	then
+		#flag recordkeeping risk
+end
+
+# Source of law: 29 USC 206 (FLSA sec. 6)
+# "Every employer shall pay to each of his employees who in any 
+# workweek is engaged in commerce or in the production of goods 
+# for commerce, or is employed in an enterprise engaged in commerce 
+# or in the production of goods for commerce, wages at the 
+# following rates"
+rule "Verify minimum wage (federal)"	
+	when
+		# an employee
+		# gross wages for the week
+		# divide gross wages by hours worked
+		# compare to minimum rate for federal
+	then 
+		#flag the risk
+end
+
+rule "Verify overtime (federal)"	
+	when
+		# an employee is hourly
+		# the number of hours worked for the week is over 40
+		# check to see that the gross wages for the week is right
+	then 
+		#flag the risk
+end
