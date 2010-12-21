@@ -1,7 +1,19 @@
 Hi. Welcome to Complykit. I'm just getting started, and trying to get settled into github at the same time.
 
-For now, I'm just plugging in some tips and tricks you might want to know about.
+Here's my current vision for the project (as of 20-dec-2010): the client really doesn’t know what its risks are, but there’s this huge mass of data deep in a server room. Client guy sits down in front of a computer. Client presses a button or two, and out comes a gorgeous looking report that suddenly makes clear what kind of legal risks are out there. Now law suddenly makes sense to the business guy, and he can actually do something about it. Client is empowered by the law, no longer blindsided by it.
 
+---
+
+Before you make too much fun of the current state of the project, read this:
+http://blog.michaelrice.com/2010/12/the-harsh-maybe-imaginary-scrutiny-of-the-git-push/
+
+--- 
+
+Don't forget to join the mailing list so I can stop talking to myself:
+http://complykit-dev.981270.n3.nabble.com/
+
+
+----
 If you are setting up this project with Eclipse, this is the content of the .gitignore file I use in the top of the tree (you regular expression people will probably see improvements you could make--please do so!):
 
 .metadata/
@@ -10,5 +22,8 @@ If you are setting up this project with Eclipse, this is the content of the .git
 *.settings/
 ck-common/bin/
 ck-core/bin/
-.gitignore
+ck-demo-wagehour/bin/
+.gitignore 
+
+* I noticed some other projects are including the .gitignore file. I think this could be really useful, but it might also be annoying to people who aren't using the same development platform that I am, right???
 
