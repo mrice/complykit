@@ -12,15 +12,22 @@ package com.complykit.demos.wagehour
 # preserve payroll or other records containing" the information in sub-
 # paragraphs (1) through (12). The DOL enacted these under section 6 of
 # the FLSA.
+#JUnit: TestCase01
 rule "Verify basic record keeping"
 	when
 		#employee
+		#ssn		
 		#no gross wages
 		#or no hours
 		#but not on vacation, leave, sick, or something
 	then
 		#flag recordkeeping risk
 end
+
+rule "Verify recordkeeping for employees under age 20"
+	when
+		# need a utility for getting current date (see ComplyKitDates)
+		e : Employee (
 
 # Source of law: 29 USC 206 (FLSA sec. 6)
 # "Every employer shall pay to each of his employees who in any 

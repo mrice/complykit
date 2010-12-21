@@ -3,23 +3,32 @@ package com.complykit.demos.wagehour;
 import java.util.Date;
 
 public class Employee {
+	
 	//source: 29 CFR 516.2(a)(1)
 	private String fullName;
+	
 	//source: 29 CFR 516.2(a)(2)
 	private String homeAddress;
+	
 	//source: 29 CFR 516.2(a)(2)
 	private String homeZip;
+	
 	//source: 29 CFR 516.2(a)(3)
 	//condition: only if under age 20
 	private Date dob;
+	
 	//source: 29 CFR 516.2(a)(1)
 	private int sex;
+	
 	//source: 29 CFR 516.2(a)(1)
 	private String occupation;
+	
 	//source: 29 CFR 516.2(a)(1)
 	private int workWeekStartTime;
+	
 	//source: 29 CFR 516.2(a)(1)
 	private int workWeekStartDay;
+	
 	//source: 29 CFR 516.2(a)(1)
 	//calculated by rule
 	private float regularHourlyRate;
