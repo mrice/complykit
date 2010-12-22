@@ -45,34 +45,8 @@ public class Evaluator {
 	 * It probably could be this simple, couldn't it??
 	 */
 	public Assessment assess(Collection facts) {
-		if (this.config.isStateless()) 
-			//TODO: think through how this would work out in a server container
-			return runStatelessAssessment(facts); 
-		else
-			return runStatefulAssessment(facts);
-	}
-	
-
-	/*
-	 * Maybe not the best idea to plug all the implementation
-	 * stuff right into this class... maybe too complicated 
-	 * when trying to run in a container??
-	 */
-	private Assessment runStatelessAssessment(Collection facts) {
 		Assessment result=new Assessment();
 		result.setEvaluatorConfiguration(config);
 		return result;
 	}
-	
-	/*
-	 * Maybe not the best idea to plug all the implementation
-	 * stuff right into this class... maybe too complicated 
-	 * when trying to run in a container??
-	 */
-	private Assessment runStatefulAssessment(Collection facts) {
-		Assessment result=new Assessment();
-		result.setEvaluatorConfiguration(config);
-		return result;
-	}
-	
 }
