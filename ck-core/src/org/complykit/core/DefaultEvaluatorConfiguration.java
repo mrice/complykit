@@ -1,6 +1,8 @@
 package org.complykit.core;
 
-import org.complykit.EvaluatorConfiguration;
+import java.util.ArrayList;
+import org.complykit.config.EvaluatorConfiguration;
+import org.complykit.config.RuleLocation;
 /**
  * Yes, could have done it with config files, but I think this makes
  * it really, really easy to get up and running fast.
@@ -16,6 +18,10 @@ import org.complykit.EvaluatorConfiguration;
  *
  */
 public class DefaultEvaluatorConfiguration extends EvaluatorConfiguration {
-	
+
+    public DefaultEvaluatorConfiguration() {
+        super();
+        this.ruleLocations=new ArrayList<RuleLocation>();
+    }
 
 }

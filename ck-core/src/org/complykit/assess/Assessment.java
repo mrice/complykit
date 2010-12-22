@@ -2,7 +2,7 @@ package org.complykit.assess;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.complykit.EvaluatorConfiguration;
+import org.complykit.config.EvaluatorConfiguration;
 
 /**
  * Date created: 2010-dec-18

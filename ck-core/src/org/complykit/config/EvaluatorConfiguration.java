@@ -1,5 +1,6 @@
-package org.complykit;
+package org.complykit.config;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,12 +11,10 @@ import java.util.List;
  *
  */
 public class EvaluatorConfiguration {
-	private List<String> rules=null;
+	protected List<RuleLocation> ruleLocations;
 
-	public List<String> getRules() {
-		return rules;
-	}
-	public void setRules(List<String> rules) {
-		this.rules = rules;
-	}
+    public List<RuleLocation> getRuleLocations() {
+        return ruleLocations;
+    }
+
 }

@@ -49,6 +49,7 @@ public class EvaluatorTest {
         Assessment assessment = evaluator.assess(facts);
         assertTrue(assessment.getIssues()!=null);
         assertTrue(assessment.getRisks()!=null);
+        assertTrue(assessment.getEvaluatorConfiguration()!=null);
     }
 
 }

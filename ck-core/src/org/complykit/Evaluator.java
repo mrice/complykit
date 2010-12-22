@@ -1,5 +1,6 @@
 package org.complykit;
 
+import org.complykit.config.EvaluatorConfiguration;
 import java.util.Collection;
 
 import org.complykit.assess.Assessment;
